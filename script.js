@@ -23,11 +23,18 @@ function getprofile(event) {
                 const img = document.createElement("img")
                 img.src = data.avatar_url
 
+                const a = document.createElement("a")
+                a.href = data.html_url
+                a.innerHTML = "view profile"
+                a.setAttribute('target', "_blank")
+                
+
+                result.append(wrapperimg)
+                wrapperimg.append(img)
                 result.append(h2)
                 result.append(p)
                 result.append(h4)
-                result.append(wrapperimg)
-                wrapperimg.append(img)
+                result.append(a)
             })
 }
 
