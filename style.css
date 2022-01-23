@@ -46,4 +46,17 @@ body {
     background-color: lightblue;
     color: white;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.wrapperimg {
+    width: 100px;
+    height: 100px;
+}
+
+.wrapperimg img {
+    width: 100%;
+    height: 100%;
 }
